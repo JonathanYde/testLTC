@@ -1,0 +1,29 @@
+%1: clone Repo from web (no need if there is already a local repository):
+
+git clone [URL] %remember to add ".git" at the end
+
+%2: chose local destination:
+
+cd [local address]
+
+%3: pull changes from web:
+
+git pull
+
+%4: Work on project on your computer.
+
+%5: prepare changes to be pushed to web:
+
+git add [project title]
+
+%followed by:
+
+git commit -m "add [project title]"
+
+%6: push changed documents to web
+
+git push
+
+%to check status at any time:
+
+git status
