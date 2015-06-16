@@ -10,9 +10,13 @@ cd [local address]
 
 git pull
 
-%4: Work on project on your computer.
+%4: create branch:
 
-%5: prepare changes to be pushed to web:
+git checkout -b [name of new branch] [name of old branch] %without brackets
+
+%5: Work on project on your computer.
+
+%6: prepare changes to be pushed to web:
 
 git add [project title]
 
@@ -20,10 +24,28 @@ git add [project title]
 
 git commit -m "add [project title]"
 
-%6: push changed documents to web
+%7: push changed documents to web
 
 git push
 
 %to check status at any time:
 
 git status
+
+%8: merge changes in [new branch] to [old branch]
+
+git checkout [old branch]
+
+%followed by:
+
+git merge [new branch]
+%or
+git merge --no-ff [new branch]
+
+%9: delete [new branch]
+
+git branch -d [new branch]
+
+%followed by:
+
+git push origin [old branch]
